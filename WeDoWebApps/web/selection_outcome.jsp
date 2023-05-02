@@ -16,6 +16,11 @@
         String option = (String)request.getAttribute("option");
         %>
         <h1>You Chose to do <%= option %> test.</h1>
-        <p>Please click <a href="answer_entry.jsp">here</a> to start the test</p>
+       
+       <form action="ProcessingServlet.do" method="post">
+             <p>Please click the button below to start the test</p>
+              <input type="submit" value="Click Here To Do Addition" />  
+              <input type="text" name="op" value="" hidden="true" />   
+        </form>
     </body>
 </html>
